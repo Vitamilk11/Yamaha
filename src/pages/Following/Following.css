@@ -1,0 +1,77 @@
+.following-page {
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgba(244, 244, 244, 0.5), rgba(255, 40, 40, 0.7)); /* สีฝุ่นๆ */
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 6px 15px rgba(0, 0, 0, 0.7180); /* เงาฝุ่นๆ แบบเบลอ */
+  }
+  
+  .following-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .following-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #f44336;  /* เปลี่ยนสีเมื่อเอาเมาส์ไปชี้ */
+  }
+  
+  .following-list {
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .following-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .following-item:hover {
+    background: linear-gradient(to bottom,  #ffffff, #f40000); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-pic-following{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .user-info h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .user-info p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  
+  

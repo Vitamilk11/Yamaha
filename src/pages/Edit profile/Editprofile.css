@@ -1,0 +1,158 @@
+.profile-edit {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  color: rgb(247, 239, 239);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgb(255, 255, 255), 0 6px 15px rgb(255, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profile-pic-container {
+  position: relative;
+  margin-bottom: 40px; /* Increased margin to ensure space below the image */
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.change-photo-btn {
+  position: absolute;
+  bottom: -50px; /* Adjust this value to move the button further down */
+  left: 120%;
+  transform: translateX(-50%);
+  background-color: rgb(81, 165, 243);
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 140, 255, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 120px;
+}
+
+
+.change-photo-btn:hover {
+  background-color: rgba(67, 67, 67, 0.8);
+  transform: translateX(-50%) translateY(-3px);
+}
+
+.profile-info {
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #333;
+  color: white;
+}
+
+.input-group small {
+  display: block;
+  margin-top: 5px;
+  color: #aaa;
+}
+
+input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+.profile-divider {
+  width: 80%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0 20px auto;
+  margin-right: 80%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.confirm-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.confirm-btn:hover {
+  background: linear-gradient(to bottom, #ff0000, #ffffff);
+}
+
+.back-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.back-btn:hover {
+  background-color: #f33527;
+}
+
+label {
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .profile-edit {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}

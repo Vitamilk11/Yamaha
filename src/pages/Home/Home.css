@@ -1,0 +1,316 @@
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8; /* สีพื้นหลังนุ่มนวล */
+    border-radius: 12px; /* ขอบมน */
+    box-shadow: 
+      0 4px 10px rgb(255, 255, 255), /* เงาเบาๆ สีขาว */
+      0 6px 20px rgba(255, 0, 0, 0.955), /* Glow สีแดงจาง */
+      0 0 30px rgb(254, 0, 0); /* เพิ่มแสงกระจาย */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+  }
+  
+  .home-container:hover {
+    transform: scale(1.02); /* ทำให้ยืดเล็กน้อยเมื่อ hover */
+    box-shadow: 
+      0 6px 15px rgba(255, 255, 255, 0.8), /* เพิ่มความชัดของเงาขาว */
+      0 8px 25px rgba(255, 0, 0, 0.6), /* Glow สีแดงเด่นขึ้น */
+      0 0 40px rgba(255, 0, 0, 0.5); /* แสงกระจายเพิ่ม */
+  }
+  
+  .create-post-container {
+    background-color: #ffffff;
+    width: 150%;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .create-post-container:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+.post-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px; /* กำหนดขนาดสูงสุดให้โพสต์ */
+    margin: 0 auto;
+}
+
+.post {
+    border: 1px solid #000000;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+.image-carousel {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* ทำให้รูปภาพเป็นจัตุรัส */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ตัดส่วนเกินของรูปภาพ */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+.post-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.like-button,
+.bookmark-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.comments-section {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.comment {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.comment-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.comment-form input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.comment-form button {
+    padding: 5px 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.post-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.action-button.bookmark.active {
+    color: gold; /* Highlight bookmark */
+}
+
+.comment-section {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.comments-list {
+    max-height: 100px; /* สำหรับเลื่อนดูถ้ามีคอมเมนต์เยอะ */
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.comment {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.add-comment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-comment input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-comment button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right:200px;
+    
+  }
+  
+  .create-post-container {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-post-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+  }
+  
+  .file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-label:hover {
+    background-color: #0056b3;
+  }
+  
+  .post-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-button:hover {
+    background-color: #218838;
+  }
+  
+  .post-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .no-posts {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+  }
+  .file-upload {
+    display: inline-flex; /* ใช้ inline-flex เพื่อให้เป็นกลุ่มเดียวกัน */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0; /* ลบระยะห่างล่างออก */
+  }
+  
+  .post-actions-container {
+    display: flex;
+    justify-content: space-between; /* กระจายปุ่มให้ดูสวย */
+    align-items: center;
+  }

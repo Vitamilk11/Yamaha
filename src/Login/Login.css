@@ -1,0 +1,268 @@
+
+/* Ensure the wrapper covers the form */
+.wrapper {
+    position: relative;
+    width: 420px;
+    height: 480px;
+    background: rgb(251, 250, 250);
+    border-radius: 20px;
+    color: rgb(6, 6, 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: height 0.2s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.89), 0 6px 20px 0 rgba(0, 0, 0, 0.94);
+    background: linear-gradient(to bottom,  #ffffff, #f40000); 
+  }
+  
+  .wrapper.active {
+    height: 550px;
+  }
+  .wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .wrapper.active .form-box.login {
+    transform: translateX(-400px);
+  }
+  
+  .wrapper .form-box.register {
+    position: absolute;
+    top: 0;
+    transform: translateX(400px);
+  }
+  
+  .wrapper.active .form-box.register {
+    transform: translateX(0);
+  }
+  
+  form h1 {
+    font-size: 36px;
+    text-align: center;
+    
+  }
+  .logo{
+    background-image: url('https://inwfile.com/s-fx/tybrc2.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px; 
+    height: 100px; 
+  }
+  
+  .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+  }
+  
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #4f4f4f;
+    padding: 20px 45px 20px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 6px 15px rgba(45, 45, 45, 0.718); /* เงาฝุ่นๆ แบบเบลอ */
+    transition: box-shadow 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเงาเมื่อโฟกัส */
+  }
+  
+  .input-box input:focus {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 12px 30px rgba(53, 52, 52, 0.717); /* เพิ่มเงาฟุ้งๆ เมื่อโฟกัส */
+  }
+  
+  
+  
+  
+  .input-box input::placeholder {
+    color: #4f4f4f;
+  }
+  
+  .input-box .icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 16px;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+  }
+  
+  .remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 4px;
+  }
+  
+  .remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .remember-forgot a:hover {
+    text-decoration: underline;
+  }
+  
+  form button {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fffdfd;
+    font-weight: 00;
+    border: 0px solid rgb(255, 255, 255);
+    background: linear-gradient(to right, #ef0303, #000000);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 6px 15px rgba(0, 0, 0, 0.718); /* เงาฝุ่นๆ แบบเบลอ */
+    transition: box-shadow 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเงาเมื่อโฟกัส */
+  }
+  
+  .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-link p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .register-link p a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  
+
+/* .wrapper {
+    position: relative;
+    width: 420px;
+    height: 450px;
+    background: rgb(6, 1, 1);
+    border-radius: 10px;
+    color: rgb(242, 242, 242);
+    display: flex;
+    align-items: center;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    translate: -400px;
+}
+
+
+.wrapper .form-box.Register{
+    position: absolute;
+    translate: 400px;
+}
+.wrapper.active .form-box.Register{
+    transition: translate .18s ease;
+    translate: 0;
+}
+
+
+form h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+form .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box .icon{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    translate: 0 -50%;
+    font-size: 16px;
+}
+
+form .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-fongot label input{
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.remember-fongot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-fongot a:hover{
+    text-decoration: underline;
+} 
+form button{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+form .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 0 15px;
+}
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+} */
+

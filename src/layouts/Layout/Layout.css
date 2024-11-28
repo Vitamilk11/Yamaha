@@ -1,0 +1,19 @@
+.layout-container {
+  display: flex;
+  width: 1440px;
+  height: 640px;
+}
+
+.Navbar-container {
+  flex: 2;
+  background-color: #f4f4f4; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 8;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
