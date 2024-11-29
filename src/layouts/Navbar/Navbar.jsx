@@ -20,7 +20,7 @@ function Navbar({ tab, setTab }) {
               <img 
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3_SimuGl_rhQI7rBCMhQBsZ0eKI98kWZExA&s" 
             alt="Yamaha Logo" 
-            style={{ width: '210px', height: 'auto', marginRight: '10px' }} 
+            style={{ width: '210px', height: 'auto', marginRight: '10px' ,borderRadius: '10px'}} 
           />
         </h2>
       {tabs.map(({ name, label }) => (
